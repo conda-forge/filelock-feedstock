@@ -14,14 +14,15 @@ Summary: A platform independent file lock.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/filelock-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/filelock-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/filelock-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/filelock-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/filelock-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/filelock-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/filelock-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/filelock-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/filelock/badges/version.svg)](https://anaconda.org/conda-forge/filelock)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/filelock/badges/downloads.svg)](https://anaconda.org/conda-forge/filelock)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-filelock-green.svg)](https://anaconda.org/conda-forge/filelock) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/filelock.svg)](https://anaconda.org/conda-forge/filelock) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/filelock.svg)](https://anaconda.org/conda-forge/filelock) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/filelock.svg)](https://anaconda.org/conda-forge/filelock) |
 
 Installing filelock
 ===================
