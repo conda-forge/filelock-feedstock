@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/benediktschmitt/py-filelock
-  license: Public Domain
+  license: Unlicense
   license_file: LICENSE.rst
   summary: 'A platform independent file lock.'
 
