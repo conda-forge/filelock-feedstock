@@ -12,13 +12,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps .
 
 requirements:
   host:
     - pip
     - python >=3.6
+    # needed to get correct version number in the metadata
+    - setuptools_scm
 
   run:
     - python >=3.6
