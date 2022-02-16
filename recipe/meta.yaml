@@ -1,5 +1,5 @@
 {% set name = "filelock" %}
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 137b661e657f7850eec9def2a001efadba3414be523b87cd3f9a037372d80a15
+  sha256: d1eccb164ed020bc84edd9e45bf6cdb177f64749f6b8fe066648832d2e98726d
 
 build:
   noarch: python
