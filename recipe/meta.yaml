@@ -1,5 +1,5 @@
 {% set name = "filelock" %}
-{% set version = "3.11.0" %}
+{% set version = "3.12.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3618c0da67adcc0506b015fd11ef7faf1b493f0b40d87728e19986b536890c37
+  sha256: fc03ae43288c013d2ea83c8597001b1129db351aad9c57fe2409327916b8e718
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ test:
     - filelock
 
 about:
-  home: https://github.com/benediktschmitt/py-filelock
+  home: https://github.com/tox-dev/py-filelock
   license: Unlicense
   license_file: LICENSE
   summary: A platform independent file lock.
