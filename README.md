@@ -3,7 +3,7 @@ About filelock-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/filelock-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/benediktschmitt/py-filelock
+Home: https://github.com/tox-dev/py-filelock
 
 Package license: Unlicense
 
@@ -146,7 +146,4 @@ Feedstock Maintainers
 * [@jakirkham](https://github.com/jakirkham/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@nicoddemus](https://github.com/nicoddemus/)
-
-
-<!-- dummy commit to enable rerendering -->
 
