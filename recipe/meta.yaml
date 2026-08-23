@@ -1,5 +1,5 @@
 {% set name = "filelock" %}
-{% set version = "3.32.3" %}
+{% set version = "3.32.4" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ffa185a3540854c95caa7fa76b76cb219d907415e2c5dc9af25fd970563487f
+  sha256: 2bde2e4cf732e0153406d8a7bc80620ecf5e621fe0d25e41143c4e3b4733ff30
 
 build:
   noarch: python
