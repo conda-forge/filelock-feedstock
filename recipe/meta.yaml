@@ -1,41 +1,43 @@
-{% set name = "filelock" %}
-{% set version = "3.32.6" %}
+{% set version = "4.0.1" %}
 
 package:
-  name: {{ name }}
+  name: filelock
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a3f55a18af3652a94d8f47d6055df434f254ca1d02ef2524850c6d249ca2512c
+  url: https://pypi.org/packages/source/f/filelock/filelock-{{ version }}.tar.gz
+  sha256: fdefc3f3e87716d855ae2b732c1cfd521dd99799ef2b4d00e8c0d4dcdc7cc94b
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: {{ PYTHON }} -m pip install --no-deps .
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
-    - hatchling >=1.11.1
-    - hatch-vcs >=0.3
-
+    - hatch-vcs >=0.5
+    - hatchling >=1.29
+    - pip
   run:
     - python >={{ python_min }}
 
 test:
-  requires:
-    - python {{ python_min }}
   imports:
     - filelock
+  commands:
+    - pip check
+  requires:
+    - python {{ python_min }}
+    - pip
 
 about:
   home: https://github.com/tox-dev/py-filelock
-  license: Unlicense
-  license_file: LICENSE
   summary: A platform independent file lock.
+  doc_url: https://py-filelock.readthedocs.io
+  dev_url: https://github.com/tox-dev/py-filelock
+  license: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
