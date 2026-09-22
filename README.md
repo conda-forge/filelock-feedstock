@@ -5,9 +5,13 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/filelock-feedst
 
 Home: https://github.com/tox-dev/py-filelock
 
-Package license: Unlicense
+Package license: MIT
 
 Summary: A platform independent file lock.
+
+Development: https://github.com/tox-dev/py-filelock
+
+Documentation: https://py-filelock.readthedocs.io
 
 Current build status
 ====================
