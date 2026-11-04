@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  version: "4.2.8"
+
+package:
+  name: filelock
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/f/filelock/filelock-${{ version }}.tar.gz
+  sha256: 23df640ac0c3351f8d15c9739072d63be9078758b7d102a2183277ceb96605a3
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatch-vcs >=0.5
+    - hatchling >=1.29
+    - hatch-fancy-pypi-readme >=25.1
+    - pip
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - filelock
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: A platform independent file lock.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/tox-dev/py-filelock
+  repository: https://github.com/tox-dev/py-filelock
+  documentation: https://py-filelock.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - mariusvniekerk
+    - nicoddemus
