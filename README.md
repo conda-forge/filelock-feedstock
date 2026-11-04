@@ -11,7 +11,7 @@ Summary: A platform independent file lock.
 
 Development: https://github.com/tox-dev/py-filelock
 
-Documentation: https://py-filelock.readthedocs.io
+Documentation: https://py-filelock.readthedocs.io/
 
 Current build status
 ====================
@@ -193,7 +193,4 @@ Feedstock Maintainers
 * [@jakirkham](https://github.com/jakirkham/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@nicoddemus](https://github.com/nicoddemus/)
-
-
-<!-- dummy commit to enable rerendering -->
 
