@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.2.9"
+  version: "4.2.10"
 
 package:
   name: filelock
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/f/filelock/filelock-${{ version }}.tar.gz
-  sha256: 96530b7c538d4ea08493ab067247aab7948c54d8cd622cce711c97cccc5d9896
+  sha256: fcc3c0cb8bfe7f4b3bb0e231c04b15dbad068cb3c2515f343d8fde4dce93bd5d
 
 build:
   number: 0
